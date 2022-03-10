@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import HomeIcon from '@mui/icons-material/Home';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { NavLink } from "react-router-dom";
 
 const darkTheme = createTheme({
     palette: {
@@ -23,7 +24,7 @@ const darkTheme = createTheme({
     },
 });
 
-const pages = [<HomeIcon fontSize="large" />, 'Lien 2', 'Lien 3'];
+const pages = [<NavLink exact to ="/"><HomeIcon fontSize="large" /></NavLink>, <NavLink exact to ="/Apptuto"> Apptuto</NavLink>, <NavLink exact to ="/Pays">Pays</NavLink>];
 const settings = ['Profile', 'Logout'];
 
 const Navigation = () => {
@@ -56,7 +57,7 @@ const Navigation = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-          Mon site
+         Mon site
 
           </Typography>
 
