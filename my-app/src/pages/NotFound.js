@@ -1,11 +1,12 @@
-import { Navigation } from '@mui/icons-material';
 import React from 'react';
+import MainLayout from '../layouts/MainLayout';
 
 const NotFound = () => {
     return (
         <div>
-            <Navigation />
-            <h1>Erreur 404</h1>
+            <MainLayout>
+                <h1>Erreur 404</h1>
+            </MainLayout>
         </div>
     );
 };

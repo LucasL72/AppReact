@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Cards from "./Cards";
+import CardsCountries from "./CardsCountries";
+import Button from '@mui/material/Button';
 
 const Countries = () => {
   const [data, setData] = useState([]);
@@ -37,7 +38,7 @@ const Countries = () => {
         ))}
       </ul>
       {selectedRadio && (
-        <button onClick={() => setSelectedRadio("")}>Annuler recherche</button>
+        <Button variant="contained" onClick={() => setSelectedRadio("")}>Annuler recherche</Button>
       )}
       <br />
       <input
@@ -47,9 +48,9 @@ const Countries = () => {
       />
 
       {isCrescent ? (
-        <button onClick={() => setIsCrescent(false)}>Tri décroissant</button>
+        <Button variant="contained" onClick={() => setIsCrescent(false)}>Tri décroissant</Button>
       ) : (
-        <button onClick={() => setIsCrescent(true)}>Tri croissant</button>
+        <Button variant="contained" onClick={() => setIsCrescent(true)}>Tri croissant</Button>
       )}
 
       <br />
@@ -80,7 +81,7 @@ const Countries = () => {
             }
           })
           .map((country) => (
-            <Cards key={country.name.common} country={country} />
+            <CardsCountries key={country.name.common} country={country} />
           ))}
       </ul>
     </div>

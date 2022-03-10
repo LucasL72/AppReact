@@ -1,16 +1,16 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Logo from '../components/Logo';
-import Navigation from "../components/Navigation"
+import Container from '@mui/material/Container';
+import MainLayout from '../layouts/MainLayout';
 
 const Home = () => {
     return (
       
         <div>
-            <Navigation />
-            <Logo />
-            <h1>Home</h1>
-            <Footer />
+            <MainLayout>
+                <Container fixed>
+                    <h1>Home</h1>
+                </Container>
+            </MainLayout>
         </div>
     );
 };

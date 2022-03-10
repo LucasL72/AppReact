@@ -5,9 +5,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function ListCards() {
-  return (
-    <Card sx={{ maxWidth: 345 }}>
+const ListCards = (props) => {
+  const { list } = props;
+  {list.map((item) => {
+    return (
+      <Card sx={{ maxWidth: 345 }} key={item.id}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -17,13 +19,16 @@ export default function ListCards() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Titre
+            { item.title }
           </Typography>
           <Typography variant="body2" color="text.secondary">
-           Description
+          { item.content }
           </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
-  );
+    );
+  })}
 }
+
+export default ListCards

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cards = ({ country }) => {
+const CardsCountries = ({ country }) => {
   const numberFormat = (num) => {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   };
@@ -17,4 +17,4 @@ const Cards = ({ country }) => {
   );
 };
 
-export default Cards;
+export default CardsCountries;

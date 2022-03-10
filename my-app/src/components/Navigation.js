@@ -15,11 +15,11 @@ import HomeIcon from '@mui/icons-material/Home';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { NavLink } from "react-router-dom";
 
-const darkTheme = createTheme({
+const Theme = createTheme({
     palette: {
       mode: 'dark',
       primary: {
-        main: '#1976d2',
+        main: '#15bf56',
       },
     },
 });
@@ -47,7 +47,7 @@ const Navigation = () => {
   };
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={Theme}>
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -120,7 +120,7 @@ const Navigation = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Profile" src="/public/licorn.jpeg" />
+                <Avatar alt="Profile" src="./img/licorn.jpeg" />
               </IconButton>
             </Tooltip>
             <Menu
