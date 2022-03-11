@@ -12,7 +12,7 @@ const ListCards = (props) => {
           return (  
                 <Col sm={4} className="g-4">
                   <Card key= {item.id } >
-                    <Card.Img variant="top" src="./img/licorn.jpeg" />
+                    <Card.Img variant="top" src="./img/creative1.jpg" />
                     <Card.Body>
                       <Card.Title>{ item.title }</Card.Title>
                       <Card.Text>

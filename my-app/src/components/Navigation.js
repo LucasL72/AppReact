@@ -12,6 +12,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import HomeIcon from '@mui/icons-material/Home';
+import BuildIcon from '@mui/icons-material/Build';
+import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { NavLink } from "react-router-dom";
 
@@ -24,7 +26,7 @@ const Theme = createTheme({
     },
 });
 
-const pages = [<NavLink exact to ="/"><HomeIcon fontSize="large" /></NavLink>, <NavLink exact to ="/Apptuto"> Apptuto</NavLink>, <NavLink exact to ="/Pays">Pays</NavLink>];
+const pages = [<NavLink exact to ="/"><HomeIcon fontSize="large" /></NavLink>, <NavLink exact to ="/Apptuto"> <BuildIcon /></NavLink>, <NavLink exact to ="/Pays"><AddLocationAltIcon /></NavLink>];
 const settings = ['Profile', 'Logout'];
 
 const Navigation = () => {
@@ -57,7 +59,7 @@ const Navigation = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-         Mon site
+         Copie Pas !
 
           </Typography>
 

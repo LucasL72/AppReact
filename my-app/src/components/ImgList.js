@@ -5,7 +5,7 @@ const ImgList = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="./img/japan-anime.gif"
+      src="./img/creative1.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -27,7 +27,7 @@ const ImgList = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="./img/japan-anime.gif"
+      src="./img/creative2.jpg"
       alt="Third slide"
     />
     <Carousel.Caption>

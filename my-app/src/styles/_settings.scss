@@ -4,7 +4,7 @@ $font-1: "Poppins",
 sans-serif;
 
 $color-1: #61dafb;
-$color-2: #fcf700;
+$color-2: #ffffff;
 $color-3: #282c34;
 $color-4: rgb(32, 35, 42);
 $color-5:#fceb00;
@@ -25,11 +25,4 @@ body {
 
 li {
     list-style-type: none;
-}
-main{
-    background-color: $color-5;
-}
-
-.App{
-    background-color: $color-5;
 }
