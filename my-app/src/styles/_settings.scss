@@ -4,9 +4,10 @@ $font-1: "Poppins",
 sans-serif;
 
 $color-1: #61dafb;
-$color-2: #f7f7f7;
+$color-2: #fcf700;
 $color-3: #282c34;
 $color-4: rgb(32, 35, 42);
+$color-5:#fceb00;
 $white: rgb(243, 243, 243);
 
 * {
@@ -18,10 +19,17 @@ $white: rgb(243, 243, 243);
 body {
     margin: auto;
     font-family: $font-1;
-    color: $color-3;
     background-color: $color-2;
+    color: $color-3;
 }
 
 li {
     list-style-type: none;
+}
+main{
+    background-color: $color-5;
+}
+
+.App{
+    background-color: $color-5;
 }
