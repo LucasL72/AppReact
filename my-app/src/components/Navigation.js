@@ -59,7 +59,7 @@ const Navigation = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-         Copie Pas !
+         Mon site
 
           </Typography>
 

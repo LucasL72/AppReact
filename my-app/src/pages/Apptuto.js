@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Table from "../components/Table"
-import Form from "../components/Form"
+import FormMui from "../components/FormMui"
 import Container from 'react-bootstrap/Container'
 import ListCards from '../components/ListCards'
 import MainLayout from "../layouts/MainLayout"
@@ -58,7 +58,7 @@ class Apptuto extends Component {
                         <h1>Form</h1>
                         <Table characterData= {characters} removeCharacter={this.removeCharacter} />
                         <h3>Add new</h3> 
-                        <Form handleSubmit={this.handleSubmit} />
+                        <FormMui handleSubmit={this.handleSubmit} />
                     </Container>
                 </MainLayout>
             </div>

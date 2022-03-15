@@ -1,7 +1,8 @@
+
 const Footer = () => {
     return (
         <div className="footer">
-            <p>Lucas avec react-2022</p>
+                <p className="text-center"> © Lucas avec react-2022</p>
         </div>
     )
 }

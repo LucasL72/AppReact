@@ -1,12 +1,13 @@
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Accordion from 'react-bootstrap/Accordion'
 
-const ListCards = (props) => {
+const Header = (props) => {
   const { list } = props;
   return (
     <div ClassName="listCard">
-      <h2> List Cards</h2>
+      <h2 className='text-center'> List Cards</h2>
       <Row xs={2} md={3} className="g-4">
         {list.map((item) => {
           return (  
@@ -21,6 +22,20 @@ const ListCards = (props) => {
                     </Card.Body>
                     <Card.Footer>
                       <small className="text-muted">Last updated 3 mins ago</small>
+                      <Accordion defaultActiveKey="0">
+                           <Accordion.Item eventKey="0">
+                            <Accordion.Header> { item.titleaccord1 }</Accordion.Header>
+                               <Accordion.Body>
+                                { item.accord1 }
+                              </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="1">
+                              <Accordion.Header>{ item.titleaccord2 }</Accordion.Header>
+                              <Accordion.Body>
+                              { item.accord2 }
+                              </Accordion.Body>
+                            </Accordion.Item>
+                          </Accordion>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -32,4 +47,4 @@ const ListCards = (props) => {
   )
 }
 
-export default ListCards
+export default Header
