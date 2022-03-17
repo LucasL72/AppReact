@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import HomeIcon from '@mui/icons-material/Home';
 import BuildIcon from '@mui/icons-material/Build';
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { NavLink } from "react-router-dom";
 
@@ -26,7 +27,7 @@ const Theme = createTheme({
     },
 });
 
-const pages = [<NavLink exact to ="/"><HomeIcon fontSize="large" /></NavLink>, <NavLink exact to ="/Apptuto"> <BuildIcon /></NavLink>, <NavLink exact to ="/Pays"><AddLocationAltIcon /></NavLink>];
+const pages = [<NavLink exact to ="/"><HomeIcon fontSize="large" /></NavLink>, <NavLink exact to ="/Apptuto"> <BuildIcon /></NavLink>, <NavLink exact to ="/Pays"><AddLocationAltIcon /></NavLink>,<NavLink exact to ="/Folio"><AutoStoriesIcon /></NavLink>];
 const settings = ['Profile', 'Logout'];
 
 const Navigation = () => {

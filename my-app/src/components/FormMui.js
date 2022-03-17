@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
-class Form extends Component {
+class FormMui extends Component {
     constructor(props) {
         super(props);
         
@@ -59,4 +59,4 @@ class Form extends Component {
     }
 }
 
-export default Form;
+export default FormMui;

@@ -1,0 +1,56 @@
+
+.ImgProf {
+  display: flex;
+  justify-content: center;
+}
+.ImgProfile {
+  margin: 5px;
+  height: 200px;
+  width: 200px;
+}
+.typewriter-container {
+  display: flex;
+  justify-content: center;
+}
+.typewriter h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation: typing 4s steps(35);
+  animation-iteration-count: initial;
+}
+
+.typewriter h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 1px;
+  background: #8f8f8f;
+  right: 0;
+  top: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
