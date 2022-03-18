@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-$font-1: "Poppins",
-sans-serif;
+$font-1: 'Dancing Script', cursive;
 
 $color-1: #61dafb;
 $color-2: #ffffff;
@@ -15,6 +14,7 @@ main{
 }
 * {
     box-sizing: border-box;
+    font-family: $font-1;
     margin: 0;
     padding: 0;
 }
