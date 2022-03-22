@@ -47,13 +47,13 @@ class Article {
 
   create() {
     console.log("model create", this);
-    const { title, price } = this;
+    const { title, description} = this;
     return new Promise((resolve, reject) => {
       connection.getConnection(function (error, conn) {
         conn.query(
           `
           INSERT INTO articles (title, description)
-          VALUES ("${title}", ${description})
+          VALUES ("${title}", "${description}")
       `,
           (error, data) => {
             if (error) reject(error);
@@ -75,7 +75,7 @@ class Article {
       connection.getConnection(function (error, conn) {
         conn.query(`UPDATE articles 
                       SET title = '${title}',
-                          description = ${description}
+                          description = "${description}"
                       WHERE id = ${id};
           `, (error, d) => {
             if (error) reject(error);
