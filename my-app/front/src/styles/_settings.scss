@@ -3,20 +3,18 @@
 $font-1: 'Dancing Script', cursive;
 
 $color-1: #61dafb;
-$color-2: #ffffff;
+$color-2: #8f8f8f;
 $color-3: #282c34;
 $color-4: rgb(32, 35, 42);
 $color-5:#fceb00;
 $white: rgb(243, 243, 243);
 
 main{
-    background-color: #8f8f8f;
+    background-color:$color-2 ;
 }
 * {
     box-sizing: border-box;
     font-family: $font-1;
-    margin: 0;
-    padding: 0;
 }
 
 body {

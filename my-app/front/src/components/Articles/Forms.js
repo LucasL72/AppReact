@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import {
   createArticle,
   getArticles,
-} from "../store/actions/ArticlesActions";
+} from "../../store/actions/ArticlesActions";
 
 const Forms = () => {
     const [title, setTitle] = useState("")
@@ -30,7 +30,7 @@ const Forms = () => {
 
   return (
     <>
-      <h2 className="text-center">Mon formulaire</h2>
+      <h2 className="text-center text-decoration-underline">Mon formulaire de création d'articles</h2>
       <Form onSubmit={(e) => handleForm(e)}>
         <Row>
           <Col sm={12}>

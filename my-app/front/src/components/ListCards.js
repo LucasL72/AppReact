@@ -6,7 +6,7 @@ const Header = (props) => {
   const { list } = props;
   return (
     <div ClassName="listCard">
-      <h2 className="text-center"> List Cards</h2>
+      <h2 className="text-center  text-decoration-underline"> List Cards</h2>
       <Row xs={2} md={3} className="g-4">
         {list.map((item) => {
           return (

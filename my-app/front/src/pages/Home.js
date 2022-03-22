@@ -2,12 +2,12 @@ import React from "react";
 import Container from "@mui/material/Container";
 import MainLayout from "../layouts/MainLayout";
 import Header from "../components/Header";
-import Forms from "../components/Forms";
-import ListArticle from "../components/ListArticle";
+import Forms from "../components/Articles/Forms";
+import ListArticle from "../components/Articles/ListArticle";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-
 import { getArticles } from "../store/actions/ArticlesActions";
+import Banner from "../components/Banner";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -25,6 +25,9 @@ const Home = () => {
         <Header />
         <Container fixed>
           <ListArticle list={listArticles} />
+        </Container>
+        <Banner />
+        <Container fixed>
           <Forms />
         </Container>
       </MainLayout>

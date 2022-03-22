@@ -2,7 +2,7 @@ import { useState } from "react";
 import EditArticle from "./EditArticle";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { deleteArticle } from "../store/actions/ArticlesActions";
+import { deleteArticle } from "../../store/actions/ArticlesActions";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -19,7 +19,7 @@ const CardArticle = (props) => {
 
   const toArticleID = async (id) => {
     console.log("go to article id");
-    navigate("/" + id, { state: { id, item } });
+    navigate("/Article/" + id, { state: { id, item } });
   };
 
   const toggler = (bool) => setEditToggle(bool);
@@ -27,7 +27,7 @@ const CardArticle = (props) => {
   return (
     <Col sm={4} className="g-4">
       <Card key={item.id}>
-        <Card.Img variant="top" src="./img/creative1.jpg" />
+        <Card.Img variant="top" src="./img/creative1.jpg" alt={item.title} />
         <Card.Body>
           <Card.Title>{item.title}</Card.Title>
           <Card.Text>{item.description}</Card.Text>
@@ -37,11 +37,11 @@ const CardArticle = (props) => {
             type="submit"
             onClick={() => toArticleID(item.id)}
           >
-            Submit
+            Page ID
           </Button>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className="text-muted">Last updated 3 mins ago</small><br></br>
           <Button
             cla
             variant="outline-danger"
@@ -62,7 +62,7 @@ const CardArticle = (props) => {
         {editToggle ? (
           <EditArticle item={item} toggler={toggler} />
         ) : (
-          <p>edit: false</p>
+          <p></p>
         )}
       </Card>
     </Col>
