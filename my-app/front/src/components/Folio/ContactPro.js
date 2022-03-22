@@ -6,7 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const ContactPro = () => {
   return (
-    <div className="ContactPro mt-5">
+    <div className="ContactPro mt-4">
       <div className="typewriter-container">
         <div className="typewriter">
           <h1 className="text-decoration-underline">Me contacter</h1>

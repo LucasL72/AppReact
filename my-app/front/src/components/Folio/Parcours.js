@@ -11,7 +11,7 @@ const Parcours = () => {
         </div>
       </div>
       <CV />
-      <div className="text-center">
+      <div className="text-center mt-3">
         <Button
           cla
           variant="outline-dark"

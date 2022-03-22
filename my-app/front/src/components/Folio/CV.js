@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
-import Placeholder from 'react-bootstrap/Placeholder'
+import Placeholder from "react-bootstrap/Placeholder";
 
 const CV = () => {
   return (
@@ -24,10 +24,12 @@ const CV = () => {
           </Card.Body>
         </Card>
       </Col>
-
-      <Placeholder xs={12} bg="success" animation="glow" />
       
-      <Col md={12} className="mt-3">
+      <Placeholder as="p" animation="glow">
+        <Placeholder xs={12} bg="success" />
+      </Placeholder>
+
+      <Col md={12}>
         <Card border="success" bg="dark" text="light">
           <Card.Header className="text-center text-success h3">
             Expériences professionnelles

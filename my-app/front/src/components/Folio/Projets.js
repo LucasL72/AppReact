@@ -3,7 +3,7 @@ import Col from "react-bootstrap/Col";
 import GitHubIcon from "@mui/icons-material/GitHub";
 const Projets = () => {
   return (
-    <div className="Projets mt-5">
+    <div className="Projets mt-5 mb-5">
       <div className="typewriter-container">
         <div className="typewriter">
           <h1 className="text-decoration-underline">Mes Projets</h1>

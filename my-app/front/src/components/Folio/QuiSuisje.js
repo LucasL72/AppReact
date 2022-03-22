@@ -2,7 +2,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 const QuiSuisje = () => {
   return (
-    <div className="Qui mt-5">
+    <div className="Qui mt-4">
       <div className="typewriter-container">
         <div className="typewriter">
           <h1 className=" text-decoration-underline">Qui suis-je?</h1>
