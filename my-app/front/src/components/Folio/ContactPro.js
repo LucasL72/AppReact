@@ -13,13 +13,13 @@ const ContactPro = () => {
         </div>
       </div>
       <Col className="text-center" sm={12}>
-        <a href="https://github.com/LucasL72">
+        <a href="https://github.com/LucasL72" target="_blank" rel="noreferrer">
           <GitHubIcon sx={{ fontSize: 70 }} />
         </a>
-        <a href="https://www.linkedin.com/in/lucas-ledoux-244b0a175/">
+        <a href="https://www.linkedin.com/in/lucas-ledoux-244b0a175/" target="_blank" rel="noreferrer">
           <LinkedInIcon sx={{ fontSize: 70 }} />
         </a>
-        <a href="mailto:lucasj.ledoux@gmail.com"><EmailIcon sx={{ fontSize: 70 }} /></a>
+        <a href="mailto:lucasj.ledoux@gmail.com" target="_blank" rel="noreferrer"><EmailIcon sx={{ fontSize: 70 }} /></a>
       </Col>
     </div>
   );

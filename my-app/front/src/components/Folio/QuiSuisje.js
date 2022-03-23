@@ -10,7 +10,7 @@ const QuiSuisje = () => {
       </div>
       <Row>
         <Col sm={6}>
-          <div className="ImgProf">
+          <div className="ImgProf ZoomIn">
             <img
               className="rounded-circle ImgProfile"
               src="./img/licorn.jpeg"

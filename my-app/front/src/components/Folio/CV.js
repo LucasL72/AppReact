@@ -24,13 +24,8 @@ const CV = () => {
           </Card.Body>
         </Card>
       </Col>
-      
-      <Placeholder as="p" animation="glow">
-        <Placeholder xs={12} bg="success" />
-      </Placeholder>
-
       <Col md={12}>
-        <Card border="success" bg="dark" text="light">
+        <Card border="success" bg="dark" text="light" className=" mt-3">
           <Card.Header className="text-center text-success h3">
             Expériences professionnelles
           </Card.Header>
